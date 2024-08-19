@@ -65,12 +65,12 @@ while true; do
             ;;
         11)
             echo "Setting default file permissions to rw-rw-r--..."
-            umask 0027
+            umask 0002
             ;;
         12)
             echo "Files in $(pwd) in uppercase:"
             for file in *; do
-                echo "${file^^}"
+                echo "$file" | tr [:lower:] [:upper:]
             done
             ;;
         13)
