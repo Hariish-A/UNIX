@@ -10,3 +10,6 @@ echo "Directories $directories"
 
 soft_links=$(find . -maxdepth 1 -type l | wc -l)
 echo "Softlinks $soft_links"
+
+#to create softlink (ln -s original.txt softlink.txt)
+#to create hardlink (ln original.txt hardlink.txt)
